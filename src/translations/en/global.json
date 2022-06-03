@@ -1,0 +1,19 @@
+{
+    "home":"Home",
+    "title":"I'm Developer",
+    "subtitle":"I enjoy coding in React.",
+    "writeme":"Write me",
+    "learning":"I'm learning lately!",
+    "appTitle":"App made in React",
+    "description":"Description:",
+    "infoApp":"E-commerce application",
+    "demo":"Demo",
+    "skills":"Skills",
+    "frontend":"Frontend",
+    "backend":"Backend",
+    "errorRequest":"Could not load page",
+    "readPost": "Read post",
+    "aboutPortfolio":"About portfolio",
+    "descriptionPortfolio":"It was made in Next Js, it is a small project that has a blog and features like dark mode and English/Spanish mode. The handling of the routes is done by the framework itself unlike react that needs some library like react-router-dom. As far as the blog is concerned it consumes resources of a CMS in this case Strapi was the chosen one, it stores the content, the code, the urls, and everything that represents rich text. In such a way to choose to have the data already stored in a database. It has a simulated technical blog. Finally following the recommendations in the use of Next we use getStaticProps and getStaticPaths functions, so that the data can be consumed with SSG. If you want to see the code click on the link.",
+    "linkPortfolioGithub":"Code on Github"      
+}

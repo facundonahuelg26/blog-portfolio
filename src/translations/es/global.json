@@ -1,0 +1,19 @@
+{
+    "home":"Inicio",
+    "title":"Soy Desarrollador",
+    "subtitle":"Disfruto codear en React.",
+    "writeme":"Escribeme",
+    "learning":"Estoy Aprendiendo",
+    "appTitle":"App hecha en React",
+    "description":"Descripción:",
+    "infoApp":"Aplicación de comercio electrónico",
+    "demo":"Prototipo",
+    "skills":"Habilidades",
+    "frontend":"En Interfaz",
+    "backend":"Del lado del servidor",
+    "errorRequest":"No se pudo cargar la página",
+    "readPost": "Leer post",
+    "aboutPortfolio":"Sobre el portfolio",
+    "descriptionPortfolio":"Fue realizado en Next Js, es un pequeño proyecto que cuenta con un blog y funciones como modo oscuro y modo Ingles/Español. El manejo de las rutas lo hace el propio framework a diferencia de react que necesita de alguna libreria como react-router-dom. En lo que refiere al blog consume recursos de un CMS en este caso Strapi fue el elegido, en éste se almacena tanto el contenido, el código, las urls, y todo aquello que represente texto enriquecido. De modo tal de elegir tener los datos almacenados ya en una base de datos.También se representa una simulación de blog tecnico. Por último siguiendo las recomendaciones en el uso de Next se utilizan funciones de getStaticProps y getStaticPaths, de manera que se puedan consumir los datos con SSG. Si queres ver el codigo pincha el enlace.",
+    "linkPortfolioGithub":"Código en Github"    
+}
