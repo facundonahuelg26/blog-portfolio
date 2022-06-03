@@ -14,7 +14,6 @@ const Card = ({ response }) => {
               <Image
                 src={images}
                 alt="image"
-                //className="w-64 h-64 object-cover"
                 width={256} 
                 height={256} 
                 objectFit='cover'

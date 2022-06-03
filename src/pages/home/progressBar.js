@@ -1,6 +1,7 @@
 import React from "react";
 
 const ProgressBar = ({ item }) => {
+
   return (
     <div>
       {item.info.map((element) => (
