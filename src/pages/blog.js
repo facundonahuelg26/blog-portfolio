@@ -2,7 +2,7 @@ import Layout from '../components/Layout'
 import Card from './blog/Card'
 import Error from './_error'
 
-const blog =  ({response, statusCode}) => {
+const Blog =  ({response, statusCode}) => {
   if(statusCode){
     return <Error statusCode={statusCode}/>
   }
@@ -21,7 +21,7 @@ const blog =  ({response, statusCode}) => {
   )
 }
 
-export default blog
+export default Blog
 
 export async function getStaticProps() {
   const res = await fetch('https://app-strapi-next-porfolio.herokuapp.com/posts')
