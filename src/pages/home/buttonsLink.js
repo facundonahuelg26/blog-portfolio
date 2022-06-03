@@ -1,4 +1,4 @@
-import { infoButtons } from "./helpers";
+import { infoButtons } from "../../helpers/helpers";
 
 const ButtonsLink = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLanguage } from '../../context/languageContext'
-import { skills } from './helpers'
+import { skills } from '../../helpers/helpers'
 import ProgressBar from './progressBar'
 
 const Skills = () => {
