@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import Card from './blog/Card'
+import Card from './blog/card'
 import Error from './_error'
 
 const Blog =  ({response, statusCode}) => {

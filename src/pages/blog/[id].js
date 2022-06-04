@@ -1,6 +1,6 @@
-import LinksLeft from "./LinksLeft";
-import CentralPage from "./CentralPage";
-import DataWritter from "./DataWritter";
+import LinksLeft from "./linksLeft";
+import CentralPage from "./centralPage";
+import DataWritter from "./dataWritter";
 import Head from "next/head";
 
 const Post = ({operations, incidents}) => {

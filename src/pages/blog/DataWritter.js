@@ -1,6 +1,6 @@
 import Info from "components/Info";
 import Image from "next/image";
-import LinkPost from "./LinkPost";
+import LinkPost from "./linkPost";
 
 const DataWritter = ({ incidents }) => {
   return (
