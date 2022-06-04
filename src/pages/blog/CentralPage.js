@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-const CentralPage = ({title, images, content, createdAt, subtitle}) => {
+const CentralPage = ({title, images, content, subtitle, dateOfCreation}) => {
   const [image, setImage] = useState("/game-store.webp");
 
   useEffect(() => {
@@ -11,8 +11,6 @@ const CentralPage = ({title, images, content, createdAt, subtitle}) => {
     }
   }, [images]);
 
-  const date = createdAt.split("T")
-  const dateOfCreation = date[0]
   return (
     <div className="2xl:border-dashed 2xl:border border-gray-300 xl:w-3/4 2xl:w-full">
       <div className="pt-10 px-6 flex items-center">

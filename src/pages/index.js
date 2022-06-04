@@ -1,14 +1,30 @@
-import { useTheme } from "next-themes";
-import Layout from "../components/Layout";
-import CardImage from "./home/cardImage";
-import DescriptionPortfolio from "./home/descriptionPortfolio";
-import Learning from "./home/learning";
-import Skills from "./home/skills";
-import Title from "./home/title";
+// import Layout from "components/Layout";
 
-const Index = () => {
+// export default function Home() {
+//   return (
+//     <Layout
+//       title="Portfolio | Next Js"
+//       description="Portfolio in Next Js"
+//       >
+//         <h1>kjajkjajkakj</h1>
+//       </Layout>
+//   )
+// }
+
+import { useTheme } from "next-themes";
+import Layout from "components/Layout";
+import CardImage from "components/home/cardImage";
+import DescriptionPortfolio from "components/home/descriptionPortfolio";
+import Learning from "components/home/learning";
+import Title from "components/home/title";
+import ProgressBar from "components/home/progressBar"
+import fsPromises from 'fs/promises';
+import path from 'path'
+import { useLanguage } from "context/languageContext";
+
+const Home = ({skills}) => {
   const { theme, setTheme } = useTheme();
- 
+  const {language} = useLanguage()
 
   const mainContainer =
     "min-h-screen flex flex-col items-center bg-gray-100 dark:bg-globalBg py-16";
@@ -25,7 +41,17 @@ const Index = () => {
           <Title theme={theme} />
           <CardImage theme={theme} setTheme={setTheme} />
           <Learning />
-          <Skills />
+          <div className="flex justify-start items-center flex-col">
+        <h2 className={`font-bold text-3xl text-textGlobalLight dark:text-textGlobalDark  lg:pt-0`}>{language.skills}</h2>
+        {skills.map(item => (
+            <div key={item.id} className="w-auto h-auto">
+                <h2 className="text-htmlText font-medium py-4">{item.title}</h2>
+                {item.info.map(({id, subtitle, progress}) => (
+                  <ProgressBar key={id} subtitle={subtitle} progress={progress} />
+                ))}
+            </div>
+        ))}
+    </div>
         </div>
         <div className="w-full flex justify-center">
           <DescriptionPortfolio />
@@ -35,4 +61,15 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;
+
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'data.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const objectData = JSON.parse(jsonData);
+
+  
+  return {
+    props: objectData
+  }
+}

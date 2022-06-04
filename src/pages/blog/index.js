@@ -1,6 +1,6 @@
-import Layout from '../components/Layout'
-import Card from './blog/card'
-import Error from './_error'
+import Layout from '../../components/Layout'
+import Card from './card'
+import Error from '../_error'
 
 const Blog =  ({response, statusCode}) => {
   if(statusCode){
@@ -14,7 +14,9 @@ const Blog =  ({response, statusCode}) => {
     >
         <main className='bg-gray-100 w-full min-h-screen flex justify-center'>
           <div className='bg-gray-100 text-textGlobalLight w-full grid grid-cols-gridCards justify-items-center items-center gap-3 lg:w-8/12 mt-10 2xl:mt-0'>
-            <Card response={response} />
+            {response.map(({ images, title, id }) => (
+              <Card key={id} images={images} title={title} id={id}/>
+            ))}
           </div>           
         </main>
     </Layout>

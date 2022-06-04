@@ -1,0 +1,15 @@
+{
+    "skills": [
+        {
+            "id":1,
+            "title":"Frontend",
+            "info":[{"id":4, "subtitle":"HTML", "progress":"90%"}, {"id":5, "subtitle":"CSS", "progress":"80%"},{"id":6, "subtitle":"JAVASCRIPT", "progress":"85%"}, {"id":7, "subtitle":"REACT", "progress":"65%"}]
+        },
+        {
+            "id":3,
+            "title":"Backend",
+            "info":[{"id":8, "subtitle":"EXPRESS JS", "progress":"60%", "colorBar":"bg-red-600"},{"id":9, "subtitle":"MONGODB", "progress":"70%", "colorBar":"bg-emerald-800"}]
+        }
+        
+    ]
+}
